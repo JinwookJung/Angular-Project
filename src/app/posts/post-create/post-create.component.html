@@ -10,7 +10,7 @@
         minlength="3"
         placeholder="Post Title"
         #title="ngModel">
-        <mat-error *ngIf="title.invalid">Please enter a post title</mat-error>
+      <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
     </mat-form-field>
     <mat-form-field>
       <textarea
@@ -21,7 +21,7 @@
         required
         placeholder="Post Content"
         #content="ngModel"></textarea>
-        <mat-error *ngIf="content.invalid">Please enter a post</mat-error>
+      <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
     </mat-form-field>
     <button
       mat-raised-button
@@ -29,4 +29,3 @@
       type="submit">Save Post</button>
   </form>
 </mat-card>
-
