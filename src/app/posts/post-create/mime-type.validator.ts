@@ -45,4 +45,3 @@ export const mimeType = (
   );
   return frObs;
 };
-
