@@ -1,8 +1,16 @@
-import { Component } from "@angular/core";
+import { Component, Inject } from "@angular/core";
+import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 
 @Component({
   templateUrl: './error.component.html'
 })
 export class ErrorComponent {
-  message = "An Unknown error occurred!"
+  constructor(
+    public dialogRef: MatDialogRef<ErrorComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: { message: string }
+  ) {}
+
+  closeDialog(): void {
+    this.dialogRef.close();
+  }
 }
