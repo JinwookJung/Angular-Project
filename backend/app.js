@@ -11,7 +11,7 @@ const Post = require('./models/post');
 const app = express();
 
 // mongoose.connect("mongodb+srv://JIn:mEdBgRd4vgP1pRjG@mean-course.8pht16q.mongodb.net/node-angular?retryWrites=true&w=majority")
-mongoose.connect("mongodb+srv://JIn:mEdBgRd4vgP1pRjG@mean-course.8pht16q.mongodb.net/node-angular")
+mongoose.connect("mongodb+srv://JIn:"+ process.env.MONGO_ATLAS_PW +"@mean-course.8pht16q.mongodb.net/node-angular")
   .then(() => {
     console.log('connected to database!');
   })
