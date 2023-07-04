@@ -10,6 +10,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
+  // Still works
   // imports: [
   //   MatInputModule,
   //   MatCardModule,
